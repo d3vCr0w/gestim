@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background: #eee;
 }
@@ -25,4 +26,8 @@ a{
 
 .fa{
      color:#4183D7;
+=======
+.footer{
+  background-color: rgba(0, 0, 0, 0.2)
+>>>>>>> 11f2a770536aeb0460c27e21f0de4c5600d6636e
 }
