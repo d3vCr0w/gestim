@@ -1,9 +1,11 @@
 body{
-    background: #eee;
+    background: #D9D9D9;
 }
+
 span{
     font-size:15px;
 }
+
 a{
   text-decoration:none; 
   color: #0062cc;
@@ -14,7 +16,7 @@ a{
 }
 
 .box-part{
-    background:#FFF;
+    background:#2493BF;
     border-radius:0;
     padding:60px 10px;
     margin:30px 0px;
@@ -28,4 +30,16 @@ a{
 }
 .footer{
   background-color: rgba(0, 0, 0, 0.2)
+}
+
+.derecha{
+    text-align: left
+}
+  
+.justificado{
+    text-align: justify
+}
+
+.titulo{
+    color: #3C5FA6;
 }
