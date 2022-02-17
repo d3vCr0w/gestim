@@ -23,30 +23,46 @@ window.addEventListener('load', () => {
     const descripcion = params.get('descripcion');
 
    // document.getElementById('estado1').innerHTML = estado;
-    document.getElementById('name1').innerHTML = name;
-    document.getElementById('agent1').innerHTML = agent;
-    document.getElementById('email1').innerHTML = email;
-    document.getElementById('telefono1').innerHTML = telefono;
-    document.getElementById('numero1').innerHTML = numero;
-    document.getElementById('fecha1').innerHTML = fecha;
-    document.getElementById('prioridad1').innerHTML = prioridad;
-    document.getElementById('descripcion1').innerHTML = descripcion;
+    // document.getElementById('name1').innerHTML = name;
+    // document.getElementById('agent1').innerHTML = agent;
+    // document.getElementById('email1').innerHTML = email;
+    // document.getElementById('telefono1').innerHTML = telefono;
+    // document.getElementById('numero1').innerHTML = numero;
+    // document.getElementById('fecha1').innerHTML = fecha;
+    // document.getElementById('prioridad1').innerHTML = prioridad;
+    // document.getElementById('descripcion1').innerHTML = descripcion;
+    
+    var registro = "<tr>" +
+    "<td>" + estado + "</td>" +
+    "<td>" + name + "</td>" +
+    "<td>" + agent + "</td>" +
+    "<td>" + numero + "</td>" +
+    "<td>" + fecha + "</td>" +
+    "<td>" + prioridad + "</td>" +
+    "<td>" + telefono + "</td>" +
+    "<td>" + email + "</td>" +
+    "<td>" + descripcion + "</td>" +
+    "</tr>"
+
+    $("#tabla tbody").append(registro);
+
+    // $('#tabla tbody').append(`
+    //     <tr>
+    //       <td>${estado}</td>
+    //       <td>${name1}</td>
+    //       <td>${agent1}</td>
+    //       <td>${numero1}</td> 
+    //       <td>${fecha1}</td>
+    //       <td>${prioridad1}</td>
+    //       <td>${telefono1}</td>
+    //       <td>${email1}</td>
+    //       <td>${descripcion1}</td>
+
+    //     </tr>
+    //   `);
 
 
-    $('#tabla tbody').append(`
-        <tr>
-          <td>document.getElementById('estado1').innerHTML = estado</td>
-          <td>${name1}</td>
-          <td>${agent1}</td>
-          <td>${numero1}</td> 
-          <td>${fecha1}</td>
-          <td>${prioridad1}</td>
-          <td>${telefono1}</td>
-          <td>${email1}</td>
-          <td>${descripcion1}</td>
-
-        </tr>
-      `);
+      
 
 } )
 
