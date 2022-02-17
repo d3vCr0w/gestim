@@ -82,7 +82,8 @@ a {
 }
 
 .titulo {
-  color: #3c5fa6;
+  color: #d9d9d9;
+  text-align: center;
 }
 
 footer {
@@ -140,6 +141,11 @@ footer a {
   color: black;
   margin: 16px 0;
   font-size: 16px;
+}
+
+.descriptionForm1 h2 {
+  margin-top: 20px;
+  color: #d9d9d9;
 }
 
 
