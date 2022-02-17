@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <form id="descriptionForm" action="" method="post">
+    <form id="descriptionForm" action="home.html" method="GET">
         <div class="container mt-5">.
             <section class="descriptionForm1">
                 <div>
@@ -58,6 +58,21 @@
                         <label>Telefono:</label>
                         <input type="tel" name="telefono" id="telefono" class="form-control">
                     </div>
+                    <div>
+                        <select name="agent" class="form-group col-md-4">
+                            <option value="agente1"selected>Agente 1</option>
+                            <option value="agente2" >Agente 2</option>
+                            <option value="agente3">Agente 3</option>
+                          </select>
+                    </div>
+                    <div>
+                        <div>
+                            <select name="prioridad" class="form-group col-md-4">
+                                <option value="baja">Baja</option>
+                                <option value="media" selected>Media</option>
+                                <option value="alta">Alta</option>
+                              </select>
+                    </div>
                 </div>
                 <div class="row">
                     <div>
@@ -73,7 +88,7 @@
                     </div>
                 </div>
 
-                <input type="button" value="Crear Ticket" class="boton">
+                <input type="submit" value="Crear Ticket" class="boton">
 
             </section>
         </div>
