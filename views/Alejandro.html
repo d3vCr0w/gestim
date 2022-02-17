@@ -35,58 +35,71 @@
             </div>
         </div>
     </nav>
+    <div class="container mt-5">
 
     <form id="descriptionForm" action="" method="post">
         <div class="container mt-5">.
-            <section class="mt-5 pt-5 mb-5 pb-5">
+            <section class="descriptionForm1">
                 <div class="row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label>Ticket #</label>
                         <input type="text" name="Ticket" id="ticket" class="form-control">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label>Fecha de Solicitud:</label>
                         <input type="text" name="Fecha" id="fecha" class="form-control">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label>Estado:</label>
                         <input type="text" name="Estado" id="estado" class="form-control">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label>Prioridad:</label>
                         <input type="text" name="Prioridad" id="prioridad" class="form-control">
                     </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label>Servicio Afectado:</label>
-                    <input type="text" name="Servicio" id="servicio" class="form-control">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Servicio Afectado:</label>
+                        <input type="text" name="Servicio" id="servicio" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Cliente:</label>
+                        <input type="text" name="Servicio" id="servicio" class="form-control">
+                    </div>
                 </div>
 
-                <input type="button" value="Salir" id="salir">
-                <input type="button" value="Guardar" id="guardar">
-                <input type="button" value="Guardar y Salir" id="guarsal">
+                <input type="button" value="Salir" class="boton">
+                <input type="button" value="Guardar" class="boton">
+                <input type="button" value="Guardar y Salir" class="boton">
             </section>
         </div>
-
     </form>
 
-    <div class="container mt-5">
+    <form id="ticketForm" action="" method="post">
         <div class="row">
-            <section class="mt-5 pt-5 mb-5 pb-5">
-                <form id="ticketForm" action="" method="post">
+            <section class="descriptionForm2">
+                <div class="row">
+                <div class="form-group col-md-6">
                     <label>Grupo Asignado:</label>
                     <input type="text" name="grupoAsig" id="Grupo" class="form-control">
-                    <input type="button" value="Cambiar" id="cambiar">
+                    <input type="button" value="Cambiar" class="boton">
+                </div>
+                <div class="form-group col-md-6">
                     <label>Asunto:</label>
                     <input type="text" name="Asunto" id="asunto" class="form-control">
+                </div>
+                </div>
+                <div class="form-group col-md-12">
                     <label>Descripción:</label>
-                    <input type="text" name="Descripcion" id="descripcion" class="form-control">
-                </form>
+                    <textarea name="" class="form-control" cols="30" rows="10"></textarea>
+                </div>
             </section>
         </div>
-    </div>
+    </form>
+  </div>
 
     <footer class="text-center text-white footer pt-2">
         <img src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"

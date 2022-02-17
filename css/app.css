@@ -101,3 +101,48 @@ footer a {
   transform: scale(1.4);
 }
 
+.descriptionForm1{
+  width: 900px;
+  background-color: #2493bf;
+  padding: 30px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.descriptionForm2{
+  width: 900px;
+  background-color: #2493bf;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descriptionForm1 .boton{
+  margin-top: 20px;
+  width: 20%;
+  background: #d9d9d9;
+  border: none;
+  padding: 5px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.descriptionForm2 .boton{
+  margin-top: 20px;
+  width: 20%;
+  background: #d9d9d9;
+  border: none;
+  padding: 5px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+
+
+
+
