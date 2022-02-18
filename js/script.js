@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
   const fecha = Date.now();
   const prioridad = params.get('prioridad');
   const descripcion = params.get('descripcion');
-  const edicion = '<a class="btn btn-primary" href="Alejandro.html" role="button">Editar</a>';
+  const edicion = ' <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarModal">Editar</button >';
 
   var registro = "<tr>" +
     "<td>" + estado + "</td>" +
