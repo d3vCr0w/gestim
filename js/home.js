@@ -5,12 +5,15 @@ const renderTickets = (status) => {
 
   for (const ticketId of storedTicketIds) {
     const ticket = JSON.parse(localStorage.getItem(ticketId));
+    console.log(status, ticket.estado);
     if (status) {
-      if (ticket.estado !== status) break;
+      if (ticket.estado !== status) continue;
     }
     $('#tabla tbody').append(`
         <tr>
-            <td>${ticket.estado}</td>
+            <td>${
+              ticket.estado.charAt(0).toUpperCase() + ticket.estado.slice(1)
+            }</td>
             <td>${ticket.solicitante}</td>
             <td>${
               ticket.agente.charAt(0).toUpperCase() + ticket.agente.slice(1)
@@ -164,7 +167,7 @@ $(function () {
       localStorage.setItem(
         +new Date(),
         JSON.stringify({
-          estado: 'Abierto',
+          estado: 'abierto',
           solicitante: $('#name').val(),
           agente: $('#agent').val(),
           fechaSolicitud: today,
@@ -199,7 +202,7 @@ $(function () {
       localStorage.setItem(
         $('#ticketId').val(),
         JSON.stringify({
-          estado: 'Abierto', //TODO: Agregar select para cambio de estado en el formulario editar
+          estado: 'abierto', //TODO: Agregar select para cambio de estado en el formulario editar
           solicitante: $('#edit_name').val(),
           agente: $('#edit_agente').val(),
           fechaSolicitud: $('#edit_fecha_solicitud').val(),
