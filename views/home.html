@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestim</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/app.css" />
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -21,211 +18,245 @@
     <script src="../js/home.js"></script>
   </head>
 
-  <body>
+<body>
     <nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
-      <div class="container-fluid">
-        <a href="javascript:history.back()" class="navbar-brand">
-          <img
-            src="../assets/img/logo.webp"
-            height="80"
-            alt="Gestim"
-            class="main_logo"
-          />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav text-white">
-            <a href="home.html" class="nav-item nav-link">Home</a>
-          </div>
-          <div class="navbar-nav text-white">
-            <a href="help.html" class="nav-item nav-link">Ayuda</a>
-          </div>
-          <div class="navbar-nav ms-auto">
-            <a href="../index.html" class="nav-item nav-link">Salir</a>
-          </div>
+        <div class="container-fluid">
+            <a href="javascript:history.back()" class="navbar-brand">
+                <img src="../assets/img/logo.webp" height="80" alt="Gestim" class="main_logo" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav text-white">
+                    <a href="home.html" class="nav-item nav-link">Home</a>
+                </div>
+                <div class="navbar-nav text-white">
+                    <a href="help.html" class="nav-item nav-link">Ayuda</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="../index.html" class="nav-item nav-link">Salir</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div class="container mt-5">
-      <div class="row">
-        <section id="acceso" class="mt-5 pb-5 pt-5 full-height">
-          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <h1 class="titulo">Gestión de Tickets, Incidentes y Mejoras</h1>
-            <h4 class="centroUsuario">Centro de Tickets Analista - Usuario</h4>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <!--   <a class="btn btn-primary" href="Harri.html" role="button">Nuevo</a> -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Nuevo
-            </button>
-            <a class="btn btn-primary" href="#" role="button">Abiertos</a>
-            <a class="btn btn-primary" href="#" role="button">En Curso</a>
-            <a class="btn btn-primary" href="#" role="button">Cerrados</a>
-          </div>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Nuevo Ticket
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+        <div class="row">
+            <section id="acceso" class="mt-5 pb-5 pt-5 full-height">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h1 class="titulo">Gestión de Tickets, Incidentes y Mejoras</h1>
+                    <h4 class="centroUsuario">Centro de Tickets Analista - Usuario</h4>
                 </div>
-                <div class="modal-body">
-                  <form id="descriptionForm" action="home.html" method="GET">
-                    <div class="container mt-1">
-                      <section class="descriptionForm1">
-                        <div class="row">
-                          <div>
-                            <h2>Solicitante</h2>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label>Nombre del solicitante:</label>
-                            <input
-                              type="text"
-                              name="name"
-                              id="name"
-                              class="form-control"
-                            />
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label>E-mail:</label>
-                            <input
-                              type="email"
-                              name="email"
-                              id="email"
-                              class="form-control"
-                            />
-                          </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevoModal">
+                        Nuevo
+                    </button>
+                    <a class="btn btn-primary" href="#" role="button">Abiertos</a>
+                    <a class="btn btn-primary" href="#" role="button">En Curso</a>
+                    <a class="btn btn-primary" href="#" role="button">Cerrados</a>
+                </div>
+
+                <!-- Modal nuevo-->
+                <div class="modal fade" id="nuevoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Nuevo Ticket
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="descriptionForm" action="home.html" method="GET">
+                                    <div class="container mt-1">
+                                        <section class="descriptionForm1">
+                                            <div class="row">
+                                                <div>
+                                                    <h2>Solicitante</h2>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Nombre del solicitante:</label>
+                                                    <input type="text" name="name" id="name" class="form-control" />
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>E-mail:</label>
+                                                    <input type="email" name="email" id="email" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Telefono:</label>
+                                                    <input type="tel" name="telefono" id="telefono"
+                                                        class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div>
+                                                    <h2>Informacion del Ticket</h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Agente:</label>
+                                                        <select name="agent" id="agent" class="form-control">
+                                                            <option value="agente1" selected>Agente 1</option>
+                                                            <option value="agente2">Agente 2</option>
+                                                            <option value="agente3">Agente 3</option>
+                                                        </select>
+                                                    </div>
+
+
+                                                    <div class="form-group col-md-6">
+                                                        <label>Prioridad:</label>
+                                                        <select name="prioridad" id="prioridad" class="form-control">
+                                                            <option value="baja">Baja</option>
+                                                            <option value="media" selected>Media</option>
+                                                            <option value="alta">Alta</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Descripción:</label>
+                                                    <textarea class="form-control" name="description" id="description"
+                                                        cols="30" rows="5"></textarea>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Adjuntos:</label>
+                                                    <input type="file" name="Adjuntos" id="Adjuntos"
+                                                        class="form-control" />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="button" class="btn btn-primary" id="guardarbtn">
+                                    Guardar
+                                </button>
+                            </div>
                         </div>
-                        <div class="row">
-                          <div class="form-group col-md-6">
-                            <label>Telefono:</label>
-                            <input
-                              type="tel"
-                              name="telefono"
-                              id="telefono"
-                              class="form-control"
-                            />
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label>Agente:</label>
-                            <select name="agent" id="agent" class="form-control">
-                              <option value="agente1" selected>Agente 1</option>
-                              <option value="agente2">Agente 2</option>
-                              <option value="agente3">Agente 3</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="form-group col-md-4">
-                            <label>Prioridad:</label>
-                            <select name="prioridad" id="prioridad" class="form-control">
-                              <option value="baja">Baja</option>
-                              <option value="media" selected>Media</option>
-                              <option value="alta">Alta</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div>
-                            <h2>Informacion del Ticket</h2>
-                          </div>
-                          <div class="form-group col-md-12">
-                            <label>Descripción:</label>
-                            <textarea
-                              class="form-control"
-                              name="description"
-                              id="description"
-                              cols="30"
-                              rows="5"
-                            ></textarea>
-                          </div>
-                          <div class="form-group col-md-12">
-                            <label>Adjuntos:</label>
-                            <input
-                              type="file"
-                              name="Adjuntos"
-                              id="Adjuntos"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                      </section>
                     </div>
-                  </form>
                 </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                  <button type="button" class="btn btn-primary" id="guardarbtn">
-                    Guardar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-            <table class="table" id="tabla">
-              <thead>
-                <th>Estado</th>
-                <th>Solicitante</th>
-                <th>Agente</th>
-                <th>Número Ticket</th>
-                <th>Fecha Solicitud</th>
-                <th>Prioridad</th>
-                <th>Telefono</th>
-                <th>Email</th>
-                <th>Descripción</th>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </section>
-      </div>
+                <!-- Modal editar -->
+                <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Editar Ticket
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="descriptionForm" action="" method="post">
+                                    <div class="container mt-5">
+                                        <section class="descriptionForm1">
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Ticket #</label>
+                                                    <input type="text" name="Ticket" id="ticket" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Fecha de Solicitud:</label>
+                                                    <input type="text" name="Fecha" id="fecha" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Estado:</label>
+                                                    <input type="text" name="Estado" id="estado" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Prioridad:</label>
+                                                    <input type="text" name="Prioridad" id="prioridad"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Servicio Afectado:</label>
+                                                    <input type="text" name="Servicio" id="servicio"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Cliente:</label>
+                                                    <input type="text" name="Servicio" id="servicio"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                    <div class="row">
+                                       
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Grupo Asignado:</label>
+                                                    <input type="text" name="grupoAsig" id="Grupo" class="form-control">
+                                                    <input type="button" value="Cambiar" class="boton">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Asunto:</label>
+                                                    <input type="text" name="Asunto" id="asunto" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Descripción:</label>
+                                                <textarea name="" class="form-control" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="button" class="btn btn-primary" id="guardarbtn">
+                                    Guardar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <table class="table" id="tabla">
+                        <thead>
+                            <th>Estado</th>
+                            <th>Solicitante</th>
+                            <th>Agente</th>
+                            <th>Número Ticket</th>
+                            <th>Fecha Solicitud</th>
+                            <th>Prioridad</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
     </div>
 
     <footer class="text-center text-white footer pt-2">
-      <img
-        src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
-        width="50px"
-      />
-      <div class="text-center p-3">
-        © 2022 Copyright Gestim S.A.S:
-        <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
-      </div>
+        <img src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
+            width="50px" />
+        <div class="text-center p-3">
+            © 2022 Copyright Gestim S.A.S:
+            <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

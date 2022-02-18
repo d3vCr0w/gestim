@@ -1,131 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/app.css" />
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/additional-methods.min.js"></script>
-    <script src="../js/contact.js"></script>
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ticket</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/app.css" />
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery.validate.min.js"></script>
+        <script src="../js/additional-methods.min.js"></script>
+        <script src="../js/contact.js"></script>
+    </head>
 
+    <body>
 
-
-<title>
-    Registration Page
-</title>
-</head>
-
-<body></body>
-
-<nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
-    <div class="container-fluid">
-        <a href="javascript:history.back()" class="navbar-brand">
-            <img src="../assets/img/logo.webp" height="80" alt="Gestim" class="main_logo" />
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav text-white">
-                <a href="help.html" class="nav-item nav-link">Ayuda</a>
+        <nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
+            <div class="container-fluid">
+                <a href="javascript:history.back()" class="navbar-brand">
+                    <img src="../assets/img/logo.webp" height="80" alt="Gestim" class="main_logo" />
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav text-white">
+                        <a href="help.html" class="nav-item nav-link">Ayuda</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-item nav-link">Login</a>
-            </div>
+        </nav>
+
+        <div class="container mt-5">
+
+                    <form id="nameRegistration" action="" method="post">
+                        <div class="container mt-5">.
+                            <section class="descriptionForm1 mt-5" >
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Primer Nombre: </label>
+                                        <input type="text" id="firstname" name="firstname" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Segundo Nombre: </label>
+                                        <input type="text" id="secondtname" name="secondtname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label> Primer Apellido: </label>
+                                        <input type="text" id="middlename" name="middlename" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label> Segundo Apellido: </label>
+                                        <input type="text" id="secondlename" name="secondlename" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Genero:</label>
+                                        <select name="Genero" class="form-control">
+                                            <option value="male"selected>Masculino 1</option>
+                                            <option value="female" >Femenino 2</option>
+                                            <option value="other">Otro 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Telefono:</label>
+                                        <input type="number" id="phone" name="phone" class="form-control">  
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Dirección:</label>
+                                        <input type="text" id="direccion" name="direccion" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email:</label>
+                                        <input type="email" id="email" name="email" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Contraseña:</label>
+                                        <input type="Password" id="pass" name="pass" class="form-control">
+                                    </div>
+                                    <div  class="form-group col-md-6">
+                                    <label>Repetir Contraseña:</label>
+                                    <input type="Password" id="repass" name="repass" class="form-control">
+                                </div>
+                                </div>
+                                <input type="button" value="Confirmar" class="boton"/>
+                            </section>
+                        </div>
+                    </form>
+
         </div>
-    </div>
-</nav>
 
-<div class="container mt-5">
-
-    <form>
-
-        <section class="descriptionForm1">
-
-            <label>Primer Nombre: </label>
-            <input type="text" name="firstname" size="15" />
-            <label>Segundo Nombre: </label>
-            <input type="text" name="firstname" size="15" />
-            <label> Primer Apellido: </label>
-            <input type="text" name="middlename" size="15" />
-            <label> Segundo Apellido: </label>
-            <input type="text" name="middlename" size="15" />
-
-            <label>
-                Course :
-            </label>
-            <select>
-                <option value="Course">Course</option>
-                <option value="BCA">BCA</option>
-                <option value="BBA">BBA</option>
-                <option value="B.Tech">B.Tech</option>
-                <option value="MBA">MBA</option>
-                <option value="MCA">MCA</option>
-                <option value="M.Tech">M.Tech</option>
-            </select>
-
-            <br>
-            <br>
-            <label>
-                Gender :
-            </label><br>
-            <input type="radio" name="male" /> Male <br>
-            <input type="radio" name="female" /> Female <br>
-            <input type="radio" name="other" /> Other
-            <br>
-            <br>
-
-            <label>
-                Phone :
-            </label>
-            <input type="text" name="country code" value="+91" size="2" />
-            <input type="text" name="phone" size="10" /> <br> <br>
-
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label>Dirección:</label>
-                    <input type="text" id="direccion" name="direccion" class="form-control">
-                </div>
-                <div class="form-group col-md-6">
-                    <label>Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" />
-                </div>
+        <footer class="text-center text-white footer pt-2">
+            <img src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
+                width="50px" />
+            <div class="text-center p-3">
+                © 2022 Copyright Gestim S.A.S:
+                <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
             </div>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label>Contraseña:</label>
-                    <input type="Password" id="pass" name="pass" class="form-control">
-                </div>
-                <div  class="form-group col-md-6">
-                <label>Repetir Contraseña:</label>
-                <input type="Password" id="repass" name="repass" class="form-control">
-            </div>
-            </div>
-            <input type="button" value="Confirmar" class="boton"/>
-        </section>
-    </form>
-
-</div>
-
-<footer class="text-center text-white footer pt-2">
-    <img src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
-        width="50px" />
-    <div class="text-center p-3">
-        © 2022 Copyright Gestim S.A.S:
-        <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
-    </div>
-</footer>
-</body>
-
-</body>
-
+        </footer>
+    </body>
 </html>
