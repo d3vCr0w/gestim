@@ -17,7 +17,7 @@
     <script src="../js/script.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/sweetalert2.all.min.js"></script>
-  </head>
+</head>
 
 <body onload="renderTickets();">
     <nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
@@ -104,20 +104,19 @@
                                                         <label>Agente:</label>
                                                         <select name="agent" id="agent" class="form-control">
                                                             <option value="" selected>Seleccione una opción</option>
-                                                            <option value="agente1" >Agente 1</option>
-                                                            <option value="agente2">Agente 2</option>
-                                                            <option value="agente3">Agente 3</option>
+                                                            <option value="Agente 1">Agente 1</option>
+                                                            <option value="Agente 2">Agente 2</option>
+                                                            <option value="Agente 3">Agente 3</option>
                                                         </select>
                                                     </div>
-
 
                                                     <div class="form-group col-md-6">
                                                         <label>Prioridad:</label>
                                                         <select name="prioridad" id="prioridad" class="form-control">
                                                             <option value="" selected>Seleccione una opción</option>
-                                                            <option value="baja">Baja</option>
-                                                            <option value="media">Media</option>
-                                                            <option value="alta">Alta</option>
+                                                            <option value="Baja">Baja</option>
+                                                            <option value="Media">Media</option>
+                                                            <option value="Alta">Alta</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -148,7 +147,6 @@
                     </div>
                 </div>
 
-
                 <!-- Modal editar -->
                 <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -162,28 +160,37 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form id="descriptionForm" action="" method="post">
+                                <form id="descriptionForm1">
                                     <div class="container mt-5">
                                         <section class="descriptionForm1">
                                             <div class="row">
                                                 <div class="form-group col-md-6">
                                                     <label>Ticket:</label>
-                                                    <input type="text" name="Ticket" id="ticket1" class="form-control">
+                                                    <input type="text" name="Ticket" id="ticket1" class="form-control" disabled>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label>Fecha de Solicitud:</label>
-                                                    <input type="text" name="Fecha" id="fecha1" class="form-control">
+                                                    <input type="text" name="Fecha" id="fecha1" class="form-control" disabled>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-6">
                                                     <label>Estado:</label>
-                                                    <input type="text" name="Estado" id="estado1" class="form-control">
+                                                    <select name="estado" id="estado1" class="form-control">
+                                                        <option value="" selected>Seleccione una opción</option>
+                                                        <option value="Abierto">Abierto</option>
+                                                        <option value="En Curso">En curso</option>
+                                                        <option value="Cerrado">Cerrado</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label>Prioridad:</label>
-                                                    <input type="text" name="Prioridad" id="prioridad1"
-                                                        class="form-control">
+                                                    <select name="prioridad" id="prioridad1" class="form-control">
+                                                        <option value="" selected>Seleccione una opción</option>
+                                                        <option value="Baja">Baja</option>
+                                                        <option value="Media">Media</option>
+                                                        <option value="Alta">Alta</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -194,28 +201,33 @@
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label>Email:</label>
-                                                    <input type="text" name="Servicio" id="email1"
-                                                        class="form-control">
+                                                    <input type="text" name="Servicio" id="email1" class="form-control">
                                                 </div>
                                             </div>
 
-                                    <div class="row">
                                             <div class="row">
-                                                <div class="form-group col-md-6">
-                                                    <label>Agente:</label>
-                                                    <input type="text" name="grupoAsig" id="agente1" class="form-control">
-                                                    <input type="button" value="Cambiar" class="boton">
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Agente:</label>
+                                                        <select name="agente" id="agente1" class="form-control">
+                                                            <option value="" selected>Seleccione una opción</option>
+                                                            <option value="Agente 1">Agente 1</option>
+                                                            <option value="Agente 2">Agente 2</option>
+                                                            <option value="Agente 3">Agente 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Solicitante:</label>
+                                                        <input type="text" name="Asunto" id="solicitante1"
+                                                            class="form-control">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group col-md-6">
-                                                    <label>Solicitante:</label>
-                                                    <input type="text" name="Asunto" id="solicitante1" class="form-control">
+                                                <div class="form-group col-md-12">
+                                                    <label>Descripción:</label>
+                                                    <textarea id="descripcion1" name="" class="form-control" cols="30"
+                                                        rows="10"></textarea>
                                                 </div>
                                             </div>
-                                            <div class="form-group col-md-12">
-                                                <label>Descripción:</label>
-                                                <textarea id="descripcion1" name="" class="form-control" cols="30" rows="10"></textarea>
-                                            </div>
-                                    </div>
                                     </div>
                                 </form>
                             </div>
@@ -223,8 +235,8 @@
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                     Cerrar
                                 </button>
-                                <button type="button" class="btn btn-primary" id="guardarbtn">
-                                    Guardar
+                                <button type="button" class="btn btn-primary" id="editarbtn">
+                                    Editar
                                 </button>
                             </div>
                         </div>
