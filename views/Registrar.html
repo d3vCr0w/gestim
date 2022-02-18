@@ -16,71 +16,97 @@
     <title>Document</title>
 </head>
 <body>
-<title>
-    Registration Page
-</title>
-</head>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
+        <div class="container-fluid">
+            <a href="javascript:history.back()" class="navbar-brand">
+                <img src="../assets/img/logo.webp" height="80" alt="Gestim" class="main_logo" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav text-white">
+                    <a href="help.html" class="nav-item nav-link">Ayuda</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
 
-    <br>
-    <br>
-    <form>
+        <form id="nameRegistration" action="" method="post">
+            <div class="container mt-5">.
+                <section class="descriptionForm1">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Primer Nombre: </label>
+                            <input type="text" name="firstname" size="15" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Segundo Nombre: </label>
+                            <input type="text" name="secondtname" size="15" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label> Primer Apellido: </label>
+                            <input type="text" name="middlename" size="15" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label> Segundo Apellido: </label>
+                            <input type="text" name="middlename" size="15" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
 
-        <section class="descriptionForm1">
+        <form id="nameResgistration2" action="" method="post">
+            <div class="container mt-5">.
+                <section class="descriptionForm1">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>
+                                Genero:
+                            </label>
+                            <input type="radio" name="male" /> Masculino <br>
+                            <input type="radio" name="female" /> Femenino <br>
+                            <input type="radio" name="other" /> Otro
+                        </div>
+                    </div>
+                    <div class="row">
 
-        <label>Primer Nombre: </label>
-        <input type="text" name="firstname" size="15" />
-        <label>Segundo Nombre: </label>
-        <input type="text" name="firstname" size="15" />
-        <label> Primer Apellido: </label>
-        <input type="text" name="middlename" size="15" />
-        <label> Segundo Apellido: </label>
-        <input type="text" name="middlename" size="15" />
-    
-        <label>
-            Course :
-        </label>
-        <select>
-            <option value="Course">Course</option>
-            <option value="BCA">BCA</option>
-            <option value="BBA">BBA</option>
-            <option value="B.Tech">B.Tech</option>
-            <option value="MBA">MBA</option>
-            <option value="MCA">MCA</option>
-            <option value="M.Tech">M.Tech</option>
-        </select>
+                        </div>
 
-        <br>
-        <br>
-        <label>
-            Gender :
-        </label><br>
-        <input type="radio" name="male" /> Male <br>
-        <input type="radio" name="female" /> Female <br>
-        <input type="radio" name="other" /> Other
-        <br>
-        <br>
+                            <label>
+                                Phone :
+                            </label>
+                            <input type="text" name="country code" value="+91" size="2" />
+                            <input type="text" name="phone" size="10" /> <br> <br>
+                </section>
+            </div>
 
-        <label>
-            Phone :
-        </label>
-        <input type="text" name="country code" value="+91" size="2" />
-        <input type="text" name="phone" size="10" /> <br> <br>
-        Address
-        <br>
-        <textarea cols="80" rows="5" value="address">
-</textarea>
-        <br> <br>
-        Email:
-        <input type="email" id="email" name="email" /> <br>
-        <br> <br>
-        Password:
-        <input type="Password" id="pass" name="pass"> <br>
-        <br> <br>
-        Re-type password:
-        <input type="Password" id="repass" name="repass"> <br> <br>
-        <input type="button" value="Submit" />
-        </section>
-    </form>
+
+
+                        Address
+                        <br>
+                        <textarea cols="80" rows="5" value="address">
+                </textarea>
+                        <br> <br>
+                        Email:
+                        <input type="email" id="email" name="email" /> <br>
+                        <br> <br>
+                        Password:
+                        <input type="Password" id="pass" name="pass"> <br>
+                        <br> <br>
+                        Re-type password:
+                        <input type="Password" id="repass" name="repass"> <br> <br>
+                        <input type="button" value="Submit" />
+                        </section>
+                    </form>
+    </div>
 </body>
     
 </body>
