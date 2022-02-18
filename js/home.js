@@ -189,7 +189,7 @@ $(function () {
     } else {
       swal.fire({
         title: 'Error!',
-        text: 'Por favor ingrese todos los datos',
+        text: 'Por favor verifique los errores generados',
         icon: 'error',
         confirmButtonText: 'OK',
       });
@@ -224,7 +224,7 @@ $(function () {
     } else {
       swal.fire({
         title: 'Error!',
-        text: 'Por favor ingrese todos los datos',
+        text: 'Por favor verifique los errores generados',
         icon: 'error',
         confirmButtonText: 'OK',
       });

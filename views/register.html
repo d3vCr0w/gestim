@@ -16,7 +16,8 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/additional-methods.min.js"></script>
-    <script src="../js/contact.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/register.js"></script>
   </head>
 
   <body>
@@ -41,19 +42,25 @@
         <div class="collapse navbar-collapse" id="navbarCollapse"></div>
       </div>
     </nav>
-
-    <div class="container mt-5">
-      <form id="registerForm" action="" method="post">
-        <div class="container mt-5">
-          .
+    <br />
+    <br />
+    <br />
+    <div class="container" style="scroll-padding-top: 5rem">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+          <h1 class="titulo">Crear Cuenta</h1>
+        </div>
+      </div>
+      <div class="row">
+        <form id="registerForm" action="" method="post">
           <section class="mt-5">
             <div class="row">
               <div class="form-group col-md-6">
                 <label>Primer Nombre: </label>
                 <input
                   type="text"
-                  id="firstname"
-                  name="firstname"
+                  id="firstName"
+                  name="firstName"
                   class="form-control"
                 />
               </div>
@@ -61,8 +68,8 @@
                 <label>Segundo Nombre: </label>
                 <input
                   type="text"
-                  id="secondtname"
-                  name="secondtname"
+                  id="secondName"
+                  name="secondName"
                   class="form-control"
                 />
               </div>
@@ -72,8 +79,8 @@
                 <label> Primer Apellido: </label>
                 <input
                   type="text"
-                  id="middlename"
-                  name="middlename"
+                  id="lastName"
+                  name="lastName"
                   class="form-control"
                 />
               </div>
@@ -81,8 +88,8 @@
                 <label> Segundo Apellido: </label>
                 <input
                   type="text"
-                  id="secondlename"
-                  name="secondlename"
+                  id="secondLastName"
+                  name="secondLastName"
                   class="form-control"
                 />
               </div>
@@ -90,16 +97,16 @@
             <div class="row">
               <div class="form-group col-md-6">
                 <label>Genero:</label>
-                <select name="Genero" class="form-control">
-                  <option value="male" selected>Masculino 1</option>
-                  <option value="female">Femenino 2</option>
-                  <option value="other">Otro 3</option>
+                <select name="gender" class="form-control">
+                  <option value="" selected>Seleccione una opción</option>
+                  <option value="male">Masculino</option>
+                  <option value="female">Femenino</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
                 <label>Telefono:</label>
                 <input
-                  type="number"
+                  type="tel"
                   id="phone"
                   name="phone"
                   class="form-control"
@@ -112,8 +119,8 @@
                 <label>Dirección:</label>
                 <input
                   type="text"
-                  id="direccion"
-                  name="direccion"
+                  id="address"
+                  name="address"
                   class="form-control"
                 />
               </div>
@@ -153,13 +160,13 @@
                   type="button"
                   value="Reigstrarme"
                   class="btn btn-success"
-                  onclick='location.href="../index.html"'
+                  id="btnRegister"
                 />
               </div>
             </div>
           </section>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
 
     <footer class="text-center text-white footer pt-2">
