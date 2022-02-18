@@ -24,7 +24,18 @@ const renderTickets = () => {
 const editTicket = (ticketId) => {
   const ticket = JSON.parse(localStorage.getItem(ticketId));
   console.log(ticket);
-  //mostrar modal
+  $('#editarModal').modal('show');
+  
+  document.getElementById('ticket1').value = ticketId;
+  document.getElementById('fecha1').value = ticket.fechaSolicitud;
+  document.getElementById('estado1').value = ticket.estado;
+  document.getElementById('prioridad1').value = ticket.prioridad;
+  document.getElementById('telefono1').value = ticket.telefono;
+  document.getElementById('email1').value = ticket.email;
+  document.getElementById('agente1').value = ticket.agente;
+  document.getElementById('solicitante1').value = ticket.solicitante;
+  document.getElementById('descripcion1').value = ticket.descripcion;
+
   //llenar campos con jquery basados en el objeto ticket
   //hacer localstorage.setitem con el mismo ticketId para sobreescribir el que había guardado
   //llamar funcion renderTickets
