@@ -10,7 +10,7 @@ $(function () {
         lettersonly: true,
       },
       secondLastName: {
-        required: true,
+        required: false,
         lettersonly: true,
       },
       phone: {
@@ -82,7 +82,7 @@ $(function () {
           confirmButtonText: 'OK',
         })
         .then(() => {
-          location.href = '../index.html';
+          location.href = 'home.html';
         });
     } else {
       swal.fire({

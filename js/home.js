@@ -43,6 +43,7 @@ const editTicket = (ticketId) => {
   $('#edit_fecha_solicitud').val(ticket.fechaSolicitud);
   $('#edit_agente').val(ticket.agente);
   $('#edit_prioridad').val(ticket.prioridad);
+  $('#edit_estado').val(ticket.estado);
   $('#edit_telefono').val(ticket.telefono);
   $('#edit_email').val(ticket.email);
   $('#edit_description').text(ticket.descripcion);
@@ -204,7 +205,7 @@ $(function () {
       localStorage.setItem(
         $('#ticketId').val(),
         JSON.stringify({
-          estado: 'abierto', //TODO: Agregar select para cambio de estado en el formulario editar
+          estado: $('#edit_estado').val(), //TODO: Agregar select para cambio de estado en el formulario editar
           solicitante: $('#edit_name').val(),
           agente: $('#edit_agente').val(),
           fechaSolicitud: $('#edit_fecha_solicitud').val(),
