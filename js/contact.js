@@ -35,6 +35,17 @@ $(function () {
   });
 
   $('#sendBtn').on('click', function () {
-    $('#contactForm').valid();
+    if ($('#contactForm').valid()) {
+      swal
+        .fire({
+          title: '¡Mensaje Enviado!',
+          text: 'Gracias por ponerse en contacto con nosotros.',
+          icon: 'success',
+          confirmButtonText: 'OK',
+        })
+        .then(() => {
+          $('#contactForm')[0].reset();
+        });
+    }
   });
 });
