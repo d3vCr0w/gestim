@@ -23,6 +23,7 @@ window.addEventListener("submit", () => {
 
     if (valido) {
         location.assign("home.html");
+        alert("Credenciales Correctas");
     } else {
       alert("Usuario o Contraseña incorrectos");
     }
