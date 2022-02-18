@@ -21,6 +21,7 @@ window.addEventListener('load', () => {
   const fecha = Date.now();
   const prioridad = params.get('prioridad');
   const descripcion = params.get('descripcion');
+  const edicion = '<a class="btn btn-primary" href="Alejandro.html" role="button">Editar</a>';
 
   var registro = "<tr>" +
     "<td>" + estado + "</td>" +
@@ -32,6 +33,7 @@ window.addEventListener('load', () => {
     "<td>" + telefono + "</td>" +
     "<td>" + email + "</td>" +
     "<td>" + descripcion + "</td>" +
+    "<td>" + edicion + "</td>" +
     "</tr>"
 
   $("#tabla tbody").append(registro);
