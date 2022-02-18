@@ -38,8 +38,8 @@ $(function () {
     if ($('#contactForm').valid()) {
       swal
         .fire({
-          title: 'Mensaje Enviado!',
-          text: 'Gracias por ponerse en contacto con nosotros',
+          title: '¡Mensaje Enviado!',
+          text: 'Gracias por ponerse en contacto con nosotros.',
           icon: 'success',
           confirmButtonText: 'OK',
         })
