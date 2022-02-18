@@ -76,8 +76,8 @@ $(function () {
     if ($('#registerForm').valid()) {
       swal
         .fire({
-          title: 'Mensaje!',
-          text: 'Gracias por registrarse',
+          title: '¡Mensaje!',
+          text: 'Gracias por registrarse.',
           icon: 'success',
           confirmButtonText: 'OK',
         })
