@@ -87,7 +87,7 @@ $(function () {
     } else {
       swal.fire({
         title: '¡Error!',
-        text: 'Por favor verifique los errore generados.',
+        text: 'Por favor verifique los errores generados.',
         icon: 'error',
         confirmButtonText: 'OK',
         confirmButtonColor: '#2493bf',
