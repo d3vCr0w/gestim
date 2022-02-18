@@ -82,7 +82,7 @@ a {
 }
 
 .titulo {
-  color: #d9d9d9;
+  color: #4e4b4b;
   text-align: center;
 }
 
@@ -102,14 +102,14 @@ footer a {
   transform: scale(1.4);
 }
 
-.descriptionForm1{
+.descriptionForm1 {
   background-color: #2493bf;
   padding: 30px;
   margin: auto;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.descriptionForm2{
+.descriptionForm2 {
   width: 900px;
   background-color: #2493bf;
   padding: 30px;
@@ -119,7 +119,7 @@ footer a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.descriptionForm1 .boton{
+.descriptionForm1 .boton {
   margin-top: 20px;
   width: 20%;
   background: #d9d9d9;
@@ -130,7 +130,7 @@ footer a {
   font-size: 16px;
 }
 
-.descriptionForm2 .boton{
+.descriptionForm2 .boton {
   margin-top: 20px;
   width: 20%;
   background: #d9d9d9;
@@ -150,8 +150,3 @@ footer a {
   width: 900px;
   margin: auto;
 }
-
-
-
-
-
