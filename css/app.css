@@ -103,20 +103,30 @@ footer a {
 }
 
 .descriptionForm1 {
-  background-color: #2493bf;
+  color: #4e4b4b;
   padding: 30px;
   margin: auto;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .descriptionForm2 {
+  color: #4e4b4b;
   width: 900px;
-  background-color: #2493bf;
   padding: 30px;
   margin: auto;
   margin-top: 30px;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-header {
+  background-color: #2493bf;
+  color: white;
+}
+
+.modal-footer {
+  background-color: #2493bf;
+  color: white;
 }
 
 .descriptionForm1 .boton {
@@ -143,7 +153,7 @@ footer a {
 
 .descriptionForm1 h2 {
   margin-top: 20px;
-  color: #d9d9d9;
+  color: #4e4b4b;
 }
 
 .modal-ku {
