@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestim</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/app.css" />
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -15,70 +18,96 @@
     <script src="../js/additional-methods.min.js"></script>
     <script src="../js/contact.js"></script>
     <script src="../js/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-fixed-top mb-4 text-white">
-        <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand">
-                <img src="../assets/img/logo.webp" height="80" alt="Gestim" class="main_logo" />
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="../index.html" class="nav-item nav-link">Salir</a>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand">
+          <img
+            src="../assets/img/logo.webp"
+            height="80"
+            alt="Gestim"
+            class="main_logo"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+            <a href="../index.html" class="nav-item nav-link">Salir</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <div class="container mt-5">
-        <div class="row">
-            <section id="acceso" class="mt-5 pb-5 pt-5 full-height">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h1 class="titulo">Gestión de Tickets, Incidentes y Mejoras</h1>
+      <div class="row">
+        <section id="acceso" class="mt-5 pb-5 pt-5 full-height">
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h1 class="titulo">Gestión de Tickets, Incidentes y Mejoras</h1>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <main class="form-signin">
+              <form id="formulario">
+                <span class="logo mb-4">🔑</span>
+                <h1 class="h3 mb-3 fw-normal"><b>Iniciar sesión</b></h1>
+
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    required
+                  />
+                  <label for="floatingInput">Usuario</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    required
+                  />
+                  <label for="floatingPassword">Contraseña</label>
                 </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                    <main class="form-signin">
-
-                        <form id="formulario">
-                            <span class="logo mb-4">🔑</span>
-                            <h1 class="h3 mb-3 fw-normal"><b>Iniciar sesión</b></h1>
-
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInput" required>
-                                <label for="floatingInput">Usuario</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword" required>
-                                <label for="floatingPassword">Contraseña</label>
-                            </div>
-
-                            <button class="w-100 btn btn-lg btn-primary" type="submit"
-                                style="backgroud-color:#3C5FA6">Ingresar</button>
-                        </form>
-
-                    </main>
-                </div>
-
-            </section>
-        </div>
-
+                <button
+                  class="w-100 btn btn-lg btn-primary"
+                  type="submit"
+                  style="backgroud-color: #3c5fa6"
+                >
+                  Ingresar
+                </button>
+              </form>
+            </main>
+          </div>
+        </section>
+      </div>
     </div>
 
     <footer class="text-center text-white footer pt-2">
-        <img src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
-            width="50px" />
-        <div class="text-center p-3">
-            © 2022 Copyright Gestim S.A.S:
-            <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
-        </div>
+      <img
+        src="https://static.wixstatic.com/media/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.png/v1/crop/x_79,y_46,w_176,h_123/fill/w_147,h_102,al_c,q_85,usm_0.66_1.00_0.01/97d131_d2ff4ffc59c84c5f90925c9b3743ce1c~mv2.webp"
+        width="50px"
+      />
+      <div class="text-center p-3">
+        © 2022 Copyright Gestim S.A.S:
+        <a href="https://www.politecnicojic.edu.co/">gestim.com</a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

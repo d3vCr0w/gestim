@@ -109,6 +109,10 @@ footer a {
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.error {
+  color: red;
+  font-weight: bold;
+}
 .descriptionForm2 {
   color: #4e4b4b;
   width: 900px;
