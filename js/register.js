@@ -86,10 +86,11 @@ $(function () {
         });
     } else {
       swal.fire({
-        title: 'Error!',
-        text: 'Por favor verifique los errore generados',
+        title: '¡Error!',
+        text: 'Por favor verifique los errore generados.',
         icon: 'error',
         confirmButtonText: 'OK',
+        confirmButtonColor: '#2493bf',
       });
     }
   });

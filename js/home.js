@@ -5,7 +5,7 @@ const renderTickets = (status) => {
 
   for (const ticketId of storedTicketIds) {
     const ticket = JSON.parse(localStorage.getItem(ticketId));
-    console.log(status, ticket.estado);
+
     if (status) {
       if (ticket.estado !== status) continue;
     }
@@ -180,18 +180,20 @@ $(function () {
       $('#nuevoModal').modal('hide');
       $('#newTicketForm')[0].reset();
       swal.fire({
-        title: 'Información!',
-        text: 'Ticket creado correctamente.',
+        title: 'Información',
+        text: '¡Ticket creado correctamente!',
         icon: 'success',
         confirmButtonText: 'OK',
+        confirmButtonColor: '#2493bf',
       });
       renderTickets();
     } else {
       swal.fire({
-        title: 'Error!',
+        title: '¡Error!',
         text: 'Por favor verifique los errores generados',
         icon: 'error',
         confirmButtonText: 'OK',
+        confirmButtonColor: '#2493bf',
       });
       return false;
     }
@@ -216,17 +218,19 @@ $(function () {
       $('#editTicketForm')[0].reset();
       renderTickets();
       swal.fire({
-        title: 'Información!',
-        text: 'Ticket modificado correctamente.',
+        title: 'Información',
+        text: '¡Ticket modificado correctamente!',
         icon: 'success',
         confirmButtonText: 'OK',
+        confirmButtonColor: '#2493bf',
       });
     } else {
       swal.fire({
-        title: 'Error!',
-        text: 'Por favor verifique los errores generados',
+        title: '¡Error!',
+        text: 'Por favor verifique los errores generados.',
         icon: 'error',
         confirmButtonText: 'OK',
+        confirmButtonColor: '#2493bf',
       });
       return false;
     }
